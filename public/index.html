@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebRTC Demo</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="script.js"></script>
+</head>
+
+<body>
+    <audio id="audio_remote" autoplay></audio>
+
+    <div class="sidebar">
+        <div class="sidebar-camera">
+            <video id="camera_remote" autoplay></video>
+        </div>
+
+        <div class="sidebar-header">
+            <div class="sidebar-label">
+                <span class="material-icons">navigate_next</span>
+                <span>WebRTC Demo</span>
+            </div>
+        </div>
+
+        <div class="sidebar-content">
+            <div class="sidebar-label">
+                <span class="material-icons">mic</span>
+                <span>Audio</span>
+            </div>
+
+            <select id="select_audio"></select>
+
+            <div class="sidebar-label">
+                <span class="material-icons">photo_camera</span>
+                <span>Camera</span>
+            </div>
+
+            <select id="select_camera"></select>
+
+            <div class="sidebar-label">
+                <span class="material-icons">monitor</span>
+                <span>Screen</span>
+            </div>
+
+            <select id="select_screen"></select>
+
+            <!-- <button class="button-flat">
+                <span class="material-icons">check</span>
+                <span>Connect</span>
+            </button> -->
+        </div>
+    </div>
+
+    <div id="screen_container" class="screen-container">
+        <video id="screen_remote" autoplay></video>
+    </div>
+
+    <!-- <div class="dialog-backdrop">
+        <div class="dialog-container dialog-alert">
+            <div class="dialog-header">WebRTC Demo</div>
+            <div class="dialog-content">
+                <div class="dialog-label">
+                    <span class="material-icons">schedule</span>
+                    <span>Waiting for peer</span>
+                </div>
+            </div>
+        </div>
+    </div> -->
+</body>
+
+</html>
